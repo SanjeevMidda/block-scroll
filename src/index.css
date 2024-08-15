@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  transition: all 400ms;
+  overflow-y: hidden;
+}
+
+.App {
+  display: flex;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  min-width: 180dvw;
+}
+
+.blockContainer {
+  display: flex;
+  height: 80%;
+  gap: 20px;
+}
+
+.block {
+  width: 100px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+  flex-direction: column;
+  /* filter: brightness(50%); */
+  border-radius: 50px;
+  filter: grayscale(100%);
+}
+
+h1 {
+  font-size: 90px;
+  padding: 10px;
+}
+
+.block:hover {
+  /* filter: brightness(50%); */
+  width: 300px;
+  filter: grayscale(0%);
+  p {
+    /* transform: scale(1); */
+    /* padding: 30px; */
+    text-align: justify;
+    font-size: 15px;
+  }
+}
+
+p {
+  /* transform: scale(0.5); */
+  font-size: 10px;
+  padding: 30px;
+}
+
+h1,
+p {
+  color: white;
+  text-align: center;
+}
+h4 {
+  align-self: flex-start;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 35px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: orangered;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: beige;
+  border-radius: 10px;
+  height: 10px;
+}
